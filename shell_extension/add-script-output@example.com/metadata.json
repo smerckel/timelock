@@ -1,0 +1,10 @@
+{
+    "description": "Add output from script to panel",
+    "name" : "Add script output to panel",
+    "shell-version" : [
+        "3.36"
+    ],
+    "url" : "https://github.com/smerckel/timelock",
+    "uuid" : "add-script-output@example.com",
+    "version" : 1.0
+}
