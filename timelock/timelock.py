@@ -333,6 +333,5 @@ async def coro_main():
 
 
     
-def main():    
+def main():
     asyncio.run(coro_main(), debug=False)
-
