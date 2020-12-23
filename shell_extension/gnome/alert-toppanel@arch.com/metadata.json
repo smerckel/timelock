@@ -1,0 +1,13 @@
+{
+  "description": "Alert to top panel", 
+  "name": "Alert to Top Panel", 
+  "original-authors": [
+    "gaanzz11@gmail.com"
+  ], 
+  "shell-version": [
+    "3.32"
+  ], 
+  "url": "https://gitlab.com/Ricardoengitlab/gnome", 
+  "uuid": "alert-toppanel@arch.com", 
+  "version": 1
+}

@@ -1,0 +1,23 @@
+# Enter commands as one in quotum or unlock, and arguments
+# lines starting with a # are comments
+
+quotum default 60
+quotum fri 10800
+quotum sat 60
+unlock mon 15:00-18:30
+unlock tue 15:00-21:30
+unlock wed 15:00-18:30
+unlock thu 14:00-18:30
+unlock fri 14:00-18:30
+unlock sat 8:00-18:30
+unlock sun 8:00-18:30
+
+locked mon
+locked tue
+locked wed
+locked thu
+locked fri
+unlocked sat 
+unlocked sun 
+
+

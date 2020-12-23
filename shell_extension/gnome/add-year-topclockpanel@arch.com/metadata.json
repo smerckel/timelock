@@ -1,0 +1,13 @@
+{
+  "description": "Add year to top clock panel", 
+  "name": "Add Year to Top clock Panel", 
+  "original-authors": [
+    "gaanzz11@gmail.com"
+  ], 
+  "shell-version": [
+    "3.32"
+  ], 
+  "url": "https://gitlab.com/Ricardoengitlab/gnome", 
+  "uuid": "add-year-topclockpanel@arch.com", 
+  "version": 1
+}
