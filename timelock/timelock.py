@@ -15,7 +15,15 @@ logger = logging.getLogger("timelock")
 logging.basicConfig(level=logging.INFO)
 
 class Timer(object):
-    
+    ''' Timer class
+
+    Parameters
+    ----------
+    timeout : float
+         time out in seconds
+    queue : queue
+         message queue
+    '''
     def __init__(self, timeout, queue, user):
         self._timeout = timeout
         self._queue = queue
@@ -153,14 +161,15 @@ class BookKeeper:
             logger.debug("message:", message)
             self.compute_current_quotum()
             try:
-                current_time = time.time()
-                if previous_time == 0:
-                    interval = 0
-                else:
-                    interval = current_time - previous_time
-                previous_time = current_time
-                logger.debug(f"interval: {interval}, request: {request}")
                 if request == BookKeeper.REQ_USAGE:
+                    current_time = time.time()
+                    if previous_time == 0:
+                        interval = 0
+                    else:
+                        interval = current_time - previous_time
+                    if interval > 60:
+                        interval = 0
+                    previous_time = current_time
                     self.update_time(interval)
                     reply = self.get_reply_dict()
                     self._queues['bl'].put_nowait(reply)
